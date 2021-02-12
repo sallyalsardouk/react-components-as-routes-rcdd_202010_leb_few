@@ -9,10 +9,26 @@ const link = {
   textDecoration: 'none',
   color: 'white',
 }
- const Navbar = () =>
+const Navbar = () =>
   <div>
+    <NavLink>Home</NavLink>
     <NavLink
-      to="/"
+      to="/about"
+      exact
+      style={link}
+      activeStyle={{
+        background: 'darkblue'
+      }}
+    >About</NavLink>
+    <NavLink
+      to="/login"
+      exact
+      style={link}
+      activeStyle={{
+        background: 'darkblue'
+      }}
+    >Login</NavLink>
+  </div>;
 
 const Home = () => {
   return (

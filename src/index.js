@@ -9,7 +9,10 @@ const link = {
   textDecoration: 'none',
   color: 'white',
 }
- 
+ const Navbar = () =>
+  <div>
+    <NavLink
+      to="/"
 
 const Home = () => {
   return (
